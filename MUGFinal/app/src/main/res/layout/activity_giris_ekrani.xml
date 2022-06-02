@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#248D97"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_giris_ekrani_scene"
+    tools:context=".GirisEkrani">
+
+    <TextView
+        android:id="@+id/loginscreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş Ekranı"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:textSize="36dp"
+        />
+
+    <EditText
+        android:id="@+id/loginname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:hint="İsminizi Giriniz"/>
+
+    <EditText
+        android:id="@+id/loginnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:text=""
+        android:hint="Okul Numaranızı Giriniz"/>
+
+    <Switch
+        android:id="@+id/benihatirla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Beni Hatırla" />
+
+
+    <Button
+        android:id="@+id/girisyap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#248D97"
+        android:text="Giriş Yap" />
+</LinearLayout>
